@@ -7,7 +7,6 @@ def count_words(contents):
 
 
 def count_chars(contents):
-
     char_dict = {}
     # make file contents all lowercase
     lowered_contents = contents.lower()
@@ -39,6 +38,7 @@ def convert_dict_to_list(char_dict):
             alpha_char_counts.append(pair)
     return alpha_char_counts
 
+
 # print formatted report
 def print_report(words, sorted_chars):
     print(f"--- Begin report of {book_path} ---")
@@ -47,8 +47,6 @@ def print_report(words, sorted_chars):
     for c in sorted_chars:
         print(f"The '{c["char"]}' character was found {c["count"]} times")
     print("--- End report ---")
-
-
 
 
 book_path = "books/frankenstein.txt"
